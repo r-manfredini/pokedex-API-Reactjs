@@ -26,3 +26,4 @@ Aplicação web para listagem e visualização de pokémons. Foi usado ReactJS p
 -  [React-Icons](https://react-icons.netlify.com/)
 -  [Axios](https://github.com/axios/axios)
 -  [React Router](https://reactrouter.com/web/guides/quick-start)
+-  [React-Router-Dom](https://v5.reactrouter.com/web/guides/quick-start)
