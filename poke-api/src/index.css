@@ -1,0 +1,651 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --main-color: #fafafa;
+  --second-color: #ad1d41;
+  --fire: #fddfdf;
+  --grass: #defde0;
+  --electric: #fcf7de;
+  --water: #def3fd;
+  --ground: #f4e7da;
+  --rock: #d5d5d4;
+  --fairy: #fceaff;
+  --poison: #98d7a5;
+  --bug: #f8d5a3;
+  --dragon: #97b3e6;
+  --psychic: #eaeda1;
+  --flying: #f5f5f5;
+  --fighting: #e6e0d4;
+  --normal: #f5f5f5;
+  --ghost: #7b62a3;
+  --ice: #51c4e7;
+  --dark: #595761;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'Poppins', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+main {
+  padding: 100px;
+}
+
+.fire {
+  background-color: var(--fire);
+}
+
+.grass {
+  background-color: var(--grass);
+}
+
+.electric {
+  background-color: var(--electric);
+}
+
+.water {
+  background-color: var(--water);
+}
+
+.ground {
+  background-color: var(--ground);
+}
+
+.rock {
+  background-color: var(--rock);
+}
+
+.fairy {
+  background-color: var(--fairy);
+}
+
+.poison {
+  background-color: var(--poison);
+}
+
+.bug {
+  background-color: var(--bug);
+}
+
+.dragon {
+  background-color: var(--dragon);
+}
+
+.psychic {
+  background-color: var(--psychic);
+}
+
+.flying {
+  background-color: var(--flying);
+}
+
+.fighting {
+  background-color: var(--fighting);
+}
+
+.normal {
+  background-color: var(--normal);
+}
+
+.ghost {
+  background-color: var(--ghost);
+}
+
+.ice {
+  background-color: var(--ice);
+}
+
+.dark {
+  background-color: var(--dark);
+}
+
+.tag.fire {
+  background-color: rgba(233, 99, 3, 0.1);
+  color: #e96303;
+}
+
+.tag.grass {
+  background-color: rgba(114, 184, 97, 0.1);
+  color: #73b861;
+}
+
+.tag.electric {
+  background-color: rgba(245, 209, 5, 0.1);
+  color: #d4bc34;
+}
+
+.tag.water {
+  background-color: rgba(79, 120, 190, 0.1);
+  color: #4f77be;
+}
+
+.tag.ground {
+  background-color: rgba(206, 128, 86, 0.1);
+  color: #ce8056;
+}
+
+.tag.rock {
+  background-color: rgba(132, 190, 179, 0.1);
+  color: #84beb3;
+}
+
+.tag.fairy {
+  background-color: rgba(226, 150, 225, 0.1);
+  color: #e296e1;
+}
+
+.tag.poison {
+  background-color: rgba(172, 106, 202, 0.1);
+  color: #ac6aca;
+}
+
+.tag.bug {
+  background-color: rgba(156, 186, 72, 0.1);
+  color: #9bba48;
+}
+
+.tag.dragon {
+  background-color: rgba(44, 106, 193, 0.1);
+  color: #2c6ac1;
+}
+
+.tag.psychic {
+  background-color: rgba(235, 139, 132, 0.1);
+  color: #eb8b85;
+}
+
+.tag.flying {
+  background-color: rgba(117, 140, 189, 0.1);
+  color: #758cbd;
+}
+
+.tag.fighting {
+  background-color: rgba(196, 79, 99, 0.24);
+  color: #c44d61;
+}
+
+.tag.normal {
+  background-color: rgba(144, 144, 144, 0.1);
+  color: #909090;
+}
+
+.tag.ghost {
+  background-color: rgba(97, 110, 183, 0.1);
+  color: #616eb7;
+}
+
+.tag.ice {
+  background-color: rgba(113, 186, 171, 0.1);
+  color: #71baac;
+}
+
+.tag.dark {
+  background-color: rgba(89, 87, 97, 0.1);
+  color: #595761;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  padding: 0 22px 0 22px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.form-search {
+  width: 100%;
+  max-width: 23.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.inputBx {
+  width: 100%;
+  height: 2.5rem;
+  display: block;
+  padding: 8px 16px;
+  border-radius: 122px 0 0 122px;
+  border: none;
+  outline: none;
+  background-color: var(--second-color);
+  color: #fafafa;
+  transition: 0.4s cubic-bezier(0, 0.795, 0, 1);
+  font-size: 15px;
+}
+
+.inputBx::placeholder {
+  font-family: 'Poppins', sans-serif;
+  color: #fafafa;
+}
+
+.btn {
+  height: 3.5rem;
+  display: block;
+  padding: 8px 16px;
+  border-radius: 0 122px 122px 0;
+  border: none;
+  outline: none;
+  background-color: var(--second-color);
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.card-pokemon-container {
+  width: 100%;
+  min-height: 100vh;
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.card-pokemon {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  border-radius: 1em;
+  -webkit-transition: all 200ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: all 200ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  color: #000;
+}
+
+.card-pokemon:hover {
+  transform: translateY(-4px);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.card-pokemon-img {
+  width: 150px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.card-pokemon img {
+  width: 55%;
+  height: 100%;
+}
+
+.card-pokemon-name {
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  color: #313131;
+}
+
+.card-pokemon-types {
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+.card-pokemon-id {
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.card-pokemon-button {
+  display: block;
+  background-color: var(--second-color);
+  color: #fff;
+  margin: 50px auto;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 0.75em 1.25em 0.675em;
+  transition: all 200ms ease-in-out;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.card-pokemon-button:hover {
+  opacity: 1;
+}
+
+.poke-link {
+  display: block;
+  max-width: 200px;
+}
+
+.msg-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 100px;
+}
+
+.msg-error img {
+  max-width: 20px;
+}
+
+.msg-error span {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.lds-hourglass {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lds-hourglass:after {
+  content: ' ';
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #fff;
+  border-color: var(--second-color) transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+.pokemon-details {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.left-container {
+  flex: 1;
+  border-radius: 5px;
+}
+
+.right-container {
+  flex: 1;
+  padding: 3.5rem 7.2rem 2.9rem 7.4rem;
+}
+
+.pokemon-details-img {
+  padding: 1.5rem 3.2rem 1.9rem 3.4rem;
+}
+
+.pokemon-details-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.pokemon-details-name h2 {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+.pokemon-details-id {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: -0.01em;
+  color: #7a7d80;
+}
+
+.pokemon-details-type {
+  margin-bottom: 3.2rem;
+}
+
+.tag {
+  display: inline-block;
+  line-height: 2.4rem;
+  padding: 0 1.1rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: -0.01em;
+  margin: 0 5px;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.pokemon-details-info {
+  margin-bottom: 3.2rem;
+}
+
+.pokemon-details-info ul span,
+.weaknesses {
+  display: block;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  letter-spacing: -0.01em;
+  color: #7a7d80;
+  margin-bottom: 0.4rem;
+}
+
+.pokemon-details-info ul strong {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  letter-spacing: -0.01em;
+  color: #2f3133;
+}
+
+.pokemon-details-info li {
+  margin-bottom: 1.3rem;
+}
+
+.weaknesses ul {
+  margin-top: 1.3rem;
+}
+
+.progress-bar-container {
+  height: 25px;
+  background-color: #eff3f6;
+  position: relative;
+}
+
+.progress-bar {
+  position: absolute;
+  height: 100%;
+  background-color: var(--second-color);
+}
+
+.stat-pokemon {
+  margin-bottom: 1.3rem;
+}
+
+.stats-title {
+  display: block;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  letter-spacing: -0.01em;
+  color: #7a7d80;
+  margin: 3.2rem 0 1.3rem 0;
+}
+
+.stat-pokemon span {
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+.top h2 {
+  font-weight: bold;
+  font-size: 2.3rem;
+  line-height: 3.9rem;
+  letter-spacing: -0.01em;
+  color: #2f3133;
+  max-width: 26.5rem;
+}
+
+.background-pokemon {
+  width: 100%;
+  height: 80vh;
+  padding: 20px;
+  background-image: url('/public/pikachu-background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
