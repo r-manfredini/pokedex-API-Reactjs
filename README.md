@@ -9,7 +9,7 @@ Desenvolver uma plataforma web para listagem e visualização de pokémons. Foi 
 
 - [x] **Ampliar a listagem dos pokémons**: Método para adicionar mais pokémons a lista, ampliando-se a quantia de pokémons mostrada ao usuário.
 
-- [x] **Buscar pokémons**: Método para filtrar os pokémons a partir do seu nome ou número.
+- [x] **Buscar pokémons**: Método para buscar os pokémons a partir do seu nome ou número.
 
 - [x] **Selecionar pokémon**: Criar uma página na aplicação com mais detalhes sobre o pokémon escolhido.
 
