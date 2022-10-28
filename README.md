@@ -1,6 +1,6 @@
 ## 💻 Projeto
 
-Desenvolver uma plataforma web para listagem e visualização de pokémons. Foi usado ReactJS para construção deste projeto. Todos os dados sobre os pokémons como nome, número, tipo, imagem e entre outras coisas, foram possíveis com o uso da API REST [PokéApi](https://pokeapi.co/).
+Aplicação web para listagem e visualização de pokémons. Foi usado ReactJS para construção deste projeto. Todos os dados sobre os pokémons como nome, número, tipo, imagem e entre outras coisas, foram possíveis com o uso da API REST [PokéApi](https://pokeapi.co/).
 
 
 ### Funcionalidades
